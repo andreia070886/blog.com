@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- se utiliza para agrupar links, imagen y logo de la pagina -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <!-- no se puede colocar un header dentro de otro header ni dentro de una etiqueta de footer -->
+        <h1 id="titulo">Blog de AG</h1> <!--el atributo id="" se utiliza solo una vez es identificador único -->
+    </header>
+    <!--<div class>se utiliza para dvidir contenido y agruparlos en secciones
+        el atributo class="" se puede utilizar varias veces
+        <p>div</p>
+    </div>-->
+    <section class="container"><!--se utiliza para definir las secciones que tendrá la web puede -->
+
+        <article class="post"><!-- Define contenido indepedendiente, definir post, noticias, enmarcar publicacion, enmarcar imagen etc.-->
+             <!--el atributo class="" se puede utilizar varias veces -->
+            <h2>Título del post</h2>
+            <p>Descripción del post</p>
+            <img src="./img/OIP.jpeg" width="400">
+            <p> Qué afortunada me siento poder ver el amanecer y el atardecer dia a día...</p>
+        </article>
+        <article class="post">
+            <h2>Título del post 2</h2>
+            <p>Descripción del post</p>
+            <img src="./img/leones.jpeg" width="400">
+            <p>La unión hace la fuerza...</p>
+        </article>
+        <article class="post">
+            <h2>Título del post 3</h2>
+            <p>Descripción del post</p>
+            <img src="./img/power_ranger.jpg" width="400">
+            <p> Recuerdos de una Infancia feliz !</p>
+        </article>
+    </section>
+    <footer><!--se utiliza para el pie de pagina de la web puede contener el copy rich, info de contacto, ubicacion etc-->
+        <section>
+            <a href="#titulo">Ir arriba</a> <!--para evitar hacer scroll, te lleva directamente al inicio de pagina , al titulo --> 
+            <a href="mailto:aga04@iesemilidarder.com">Contacteme aquí</a><!--apartado para que te envie un correo directamente haciendo un click-->
+        </section>
+        <p>Copyright 2021</p>
+    </footer>
+
+    
+</body>
+</html>

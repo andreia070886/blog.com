@@ -1,0 +1,68 @@
+html{/*pegar la fuente de google debajo del titulo y luego en la pagina copiar 
+    el link de font-family y crear la etiqueta html y pegar lo primero de todo*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{/* el cuerpo del block le quitamos el margen por defecto y le damos color de fondo*/
+    margin: 0;
+    background-color:rgb(183, 180, 168);
+}
+
+header{ /*centrar texto, cambiar color de letras y espacio*/
+    background-color: black;
+    color:rgb(238, 228, 214);
+    padding: 3rem 2rem;
+}
+
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container{
+    width: 400px; /* es el ancho que ocupara en la pagina que coincide con el ancho de la foto*/
+    margin: 0 auto;/*centra imagen y texto en el centro de la pagina*/
+}
+
+section article{ /* afecta a todo lo que pertenece a section y article*/
+
+    transition: box-shadow 0.3s ease; /* nos permite indicar que propiedades de CSS queremos que sean animadas
+    se indica el lugar de animacion, la duracion, y el algoritmo de animación que en este caso es ease, 
+    si se quiere animar toda la seccion se ha de utilizar 'all' en vez de ease */
+
+    background-color:rgb(5, 5, 3);
+    color: antiquewhite;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;/* si en vez de 0 le doy otro valor se separará la imagen*/
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.6rem rgb(122, 122, 133);/*sombreado de los cuadros al pasar por encima*/
+}
+
+section article h2, section article p {/*afectara a todos los titulos h2 y parrafos de article y section*/
+    margin: 1rem; /*margen para separarlo de la parte izq*/
+}
+
+footer{
+    background-color: black;
+    padding: 3rem;
+    color: antiquewhite;
+}
+
+footer section{
+    float: right;
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    transition: color 0.4s ease;
+    color: antiquewhite;
+    text-decoration: none;
+}
+footer a:hover{
+    color: indianred;
+}
